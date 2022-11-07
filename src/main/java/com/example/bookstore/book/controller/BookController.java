@@ -40,7 +40,6 @@ public class BookController {
     @RequestMapping(value = "/{id}",method = RequestMethod.GET)
     public ResponseEntity<Object> getBookById(@PathVariable int id){
 
-
         return new ResponseEntity<>(service.getBookById(id),HttpStatus.OK);
     }
 
